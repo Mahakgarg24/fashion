@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Web Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #FFB7C5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #FFDDF4;
+      color: BLACK;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    a {
+      color: #2196f3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #B03060;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>OUTFIQUE</h1>
+  </header>
+
+  <main>
+    <h2>"YOU'RE NOT JUST TRENDING-YOU'RE THE TREND</h2>
+    <p>THIS IS MY FIRST WEBPAGE ABOUT FASHION FIESTA AND WESTERN WEAR COLLECTION.</p>
+
+    <img src="fashion.jpg.avif" alt="Sample Image">
+
+    <p>Click here to visit 
+      <a href="https://www.google.com" target="_blank">Google</a>
+    </p>
+
+    <button class="button" onclick="showMessage()">Click Me!</button>
+
+    <p id="message" style="margin-top: 20px; font-weight: bold;"></p>
+  </main>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "🎉 You clicked the button!";
+    }
+  </script>
+
+</body>
+</html>
